@@ -1,5 +1,9 @@
 package com.netflix.spinnaker.gate;
 
+// import org.junit.jupiter.api.Assertions.assert;
+
+import static org.assertj.core.api.Assertions.assertThat;
+
 import com.netflix.spinnaker.kork.client.ServiceClientProvider;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -19,6 +23,6 @@ public class MainSpec {
 
   @Test
   public void startupTest() {
-    assert serviceClientProvider != null;
+    assertThat(serviceClientProvider != null);
   }
 }

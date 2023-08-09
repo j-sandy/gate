@@ -38,6 +38,7 @@ dependencies {
 
   implementation "commons-io:commons-io"
   implementation "org.codehaus.groovy:groovy-templates"
+  implementation "org.codehaus.groovy:groovy-json"
   implementation "org.springframework.session:spring-session-data-redis"
   implementation "de.huxhorn.sulky:de.huxhorn.sulky.ulid"
   implementation "org.apache.commons:commons-lang3"

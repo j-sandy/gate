@@ -19,7 +19,6 @@ allprojects {
   if (name != "gate-bom" && name != "gate-api") {
     apply plugin: 'java-library'
     apply plugin: 'groovy'
-
     repositories {
       maven { url 'https://build.shibboleth.net/nexus/content/repositories/releases/' }
       maven { url 'https://repository.mulesoft.org/releases/' }
@@ -43,7 +42,8 @@ allprojects {
       testImplementation "org.springframework.boot:spring-boot-starter-test"
       testImplementation "org.hamcrest:hamcrest-core"
       testRuntimeOnly "cglib:cglib-nodep"
-      testRuntimeOnly "org.junit.vintage:junit-vintage-engine"
+      //testRuntimeOnly "org.junit.vintage:junit-vintage-engine"
+      testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine"
       testRuntimeOnly "org.objenesis:objenesis"
     }
 

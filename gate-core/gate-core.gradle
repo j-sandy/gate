@@ -46,3 +46,7 @@ sourceSets {
     groovy { srcDirs += ['src/main/java'] }
   }
 }
+
+test{
+  useJUnitPlatform()
+}
